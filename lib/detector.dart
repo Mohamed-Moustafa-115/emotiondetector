@@ -37,7 +37,7 @@ class _DetectorState extends State<Detector> {
   }
 
   loadCamera() {
-    cameracontroller = CameraController(cams![0], ResolutionPreset.high);
+    cameracontroller = CameraController(cams![0], ResolutionPreset.veryHigh);
     cameracontroller!.initialize().then((value) {
       if (!mounted) {
         return;
